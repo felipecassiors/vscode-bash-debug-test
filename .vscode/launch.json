@@ -7,9 +7,28 @@
     {
       "type": "bashdb",
       "request": "launch",
-      "name": "Bash-Debug (simplest configuration)",
+      "name": "only argsString",
       "program": "${file}",
       "argsString": "${input:argsString}"
+    },
+    {
+      "type": "bashdb",
+      "request": "launch",
+      "name": "both args and argsString",
+      "program": "${file}",
+      "args": [
+        "test"
+      ],
+      "argsString": "test"
+    },
+    {
+      "type": "bashdb",
+      "request": "launch",
+      "name": "only args",
+      "program": "${file}",
+      "args": [
+        "test"
+      ],
     }
   ],
   "inputs": [{
