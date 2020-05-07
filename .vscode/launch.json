@@ -31,7 +31,7 @@
     {
       "id": "argsString",
       "type": "promptString",
-      "default": "a \"b c\" $PWD \"it's\" great $(pwd)",
+      "default": "single \"double quotes\" 'single quotes' \"variable expansion: $PWD\" \"escaped variable expansion: \\$PWD\"",
       "description": "The arguments of the script"
     }
   ]
