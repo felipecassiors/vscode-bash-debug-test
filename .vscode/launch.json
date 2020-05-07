@@ -16,9 +16,7 @@
       "request": "launch",
       "name": "both args and argsString",
       "program": "${file}",
-      "args": [
-        "test"
-      ],
+      "args": ["test"],
       "argsString": "test"
     },
     {
@@ -26,15 +24,15 @@
       "request": "launch",
       "name": "only args",
       "program": "${file}",
-      "args": [
-        "test"
-      ],
+      "args": ["test"]
     }
   ],
-  "inputs": [{
-    "id": "argsString",
-    "type": "promptString",
-    "default": "a \"b c\" \\\\\\${file} \"it's\" great",
-    "description": "The arguments of the script"
-  }]
+  "inputs": [
+    {
+      "id": "argsString",
+      "type": "promptString",
+      "default": "a \"b c\" $PWD \"it's\" great $(pwd)",
+      "description": "The arguments of the script"
+    }
+  ]
 }
